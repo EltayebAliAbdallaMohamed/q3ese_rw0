@@ -1,0 +1,82 @@
+[
+  {
+    "ar": "أنا مدمنة على ألعاب الفيديو ولا أستطيع التوقف عن اللعب.",
+    "en": "I am addicted to video games. I can’t stop playing them.",
+    "questions": [
+      "What is Susan addicted to?",
+      "Can she stop playing easily?"
+    ]
+  },
+  {
+    "ar": "أبقى مستيقظة حتى الساعة الثالثة صباحاً ولا أحصل على نوم كافٍ.",
+    "en": "I stay up until 3 a.m. and I don’t get enough sleep.",
+    "questions": [
+      "What time does she sleep?",
+      "Does she get enough sleep?"
+    ]
+  },
+  {
+    "ar": "أشعر بالتعب الشديد وأحياناً أنام في الصف.",
+    "en": "I feel very tired and I often fall asleep in class.",
+    "questions": [
+      "Where does she fall asleep?",
+      "Is she energetic in class?"
+    ]
+  },
+  {
+    "ar": "أشعر بالضغط لأنني لا أنهي واجباتي المدرسية.",
+    "en": "I feel stress because I don’t finish my schoolwork.",
+    "questions": [
+      "Why does she feel stressed?",
+      "Does she finish her homework?"
+    ]
+  },
+  {
+    "ar": "يجب أن تبدأ خطة لتغيير العادة بشكل تدريجي.",
+    "en": "You should make a plan and change the habit slowly.",
+    "questions": [
+      "Should change happen quickly?",
+      "What should you do first?"
+    ]
+  },
+  {
+    "ar": "يمكن تقليل وقت اللعب تدريجياً كل أسبوع.",
+    "en": "You can reduce game time slowly every week.",
+    "questions": [
+      "How should game time change?",
+      "Does Dr. Lee suggest stopping suddenly?"
+    ]
+  },
+  {
+    "ar": "من الأفضل القيام بأنشطة أخرى مثل قضاء الوقت مع الأصدقاء أو القراءة.",
+    "en": "It is better to do other activities like spending time with friends or reading.",
+    "questions": [
+      "What activities are suggested?",
+      "Is reading recommended?"
+    ]
+  },
+  {
+    "ar": "من الصعب تغيير العادات لكن يجب الاستمرار وعدم الاستسلام.",
+    "en": "It is hard to change habits, but you must keep trying and not give up.",
+    "questions": [
+      "Is changing habits easy?",
+      "Should you give up?"
+    ]
+  },
+  {
+    "ar": "إنقاص الوزن يحتاج إلى وقت ولا توجد حلول سريعة.",
+    "en": "Losing weight takes time and there are no quick solutions.",
+    "questions": [
+      "Is there a quick way to lose weight?",
+      "Does it take time?"
+    ]
+  },
+  {
+    "ar": "يجب تعلم عادات جديدة لتحقيق حياة صحية أفضل.",
+    "en": "You must learn new habits to achieve a healthier life.",
+    "questions": [
+      "What do you need to learn?",
+      "What is the goal?"
+    ]
+  }
+]

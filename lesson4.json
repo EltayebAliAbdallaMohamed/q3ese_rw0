@@ -1,0 +1,82 @@
+[
+  {
+    "ar": "هل تحب المدرسة؟ أم تعتقد أن المدرسة مملة؟ ربما تريد الذهاب إلى مدرسة مختلفة.",
+    "en": "Do you like school? Or do you think school is boring? Maybe you want to go to a different kind of school.",
+    "questions": [
+      "Do all students like school?",
+      "Can school be different?"
+    ]
+  },
+  {
+    "ar": "في الأرجنتين، توجد مدرسة داخل ملعب كرة قدم كبير.",
+    "en": "In Argentina, one school is inside a large soccer stadium.",
+    "questions": [
+      "Where is the school in Argentina located?",
+      "Is it a normal school building?"
+    ]
+  },
+  {
+    "ar": "أكثر من 70 ألف شخص يمكنهم مشاهدة المباريات في هذا الملعب.",
+    "en": "More than 70,000 people can watch games in this stadium.",
+    "questions": [
+      "How many people can watch games in the stadium?",
+      "Is the stadium big or small?"
+    ]
+  },
+  {
+    "ar": "في بنغلاديش، هناك مدارس خاصة على القوارب بسبب الفيضانات.",
+    "en": "In Bangladesh, there are special schools on boats because of floods.",
+    "questions": [
+      "Why are there boat schools in Bangladesh?",
+      "Do students travel by boat?"
+    ]
+  },
+  {
+    "ar": "الطلاب يدرسون على القوارب ويجلسون على مقاعد خشبية.",
+    "en": "Students study on boats and sit on wooden benches.",
+    "questions": [
+      "Where do students sit in boat schools?",
+      "Is the classroom on land or water?"
+    ]
+  },
+  {
+    "ar": "في مدرسة الجبال في فيرمونت، يعيش الطلاب في المدرسة ويعملون في المزرعة.",
+    "en": "At the Mountain School in Vermont, students live at the school and work on a farm.",
+    "questions": [
+      "Where is the Mountain School?",
+      "Do students live at this school?"
+    ]
+  },
+  {
+    "ar": "الطلاب يزرعون الطعام ويربون الحيوانات ويساعدون في تنظيف المدرسة.",
+    "en": "Students grow food, feed animals, and help clean the school.",
+    "questions": [
+      "What do students do at the farm?",
+      "Do they only study or also work?"
+    ]
+  },
+  {
+    "ar": "في مدرسة بروكلين الحرة، لا توجد اختبارات أو واجبات أو درجات.",
+    "en": "At Brooklyn Free School, there are no tests, homework, or grades.",
+    "questions": [
+      "Are there exams in Brooklyn Free School?",
+      "Do students get grades?"
+    ]
+  },
+  {
+    "ar": "يمكن للطلاب اختيار الدروس واتخاذ قرارات مهمة بأنفسهم.",
+    "en": "Students can choose classes and make important decisions themselves.",
+    "questions": [
+      "Can students choose their classes?",
+      "Do students have control in this school?"
+    ]
+  },
+  {
+    "ar": "هل هناك شيء غير عادي في مدرستك؟ ولماذا هي مميزة؟",
+    "en": "Is there anything unusual about your school? Why is it special?",
+    "questions": [
+      "What is the final question about?",
+      "Is this a personal reflection question?"
+    ]
+  }
+]

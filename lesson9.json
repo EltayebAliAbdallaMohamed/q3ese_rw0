@@ -1,0 +1,42 @@
+[
+  {
+    "ar": "اليوم سنتحدث عن سؤال الوحدة: ما هو مبناك المفضل؟",
+    "en": "Today we’re going to discuss the Unit Question: What is your favorite building?",
+    "questions": [
+      "What is the Unit Question?",
+      "Is it about buildings or food?"
+    ]
+  },
+  {
+    "ar": "أحب محطة القطار، أعتقد أنها جميلة.",
+    "en": "I like the train station. I think it’s beautiful.",
+    "questions": [
+      "What is Yuna’s favorite building?",
+      "Is the train station beautiful?"
+    ]
+  },
+  {
+    "ar": "أحب الذهاب إلى صالة المدرسة الرياضية، إنها كبيرة جداً.",
+    "en": "I like going to the school gym. It’s very big inside.",
+    "questions": [
+      "What building does Marcus like?",
+      "Is the gym small or big?"
+    ]
+  },
+  {
+    "ar": "أحب مكتبة الكلية، فيها أشياء كثيرة ومكان هادئ للدراسة.",
+    "en": "I like the college library. It has many things and is a quiet place to study.",
+    "questions": [
+      "Why does Felix like the library?",
+      "Is it noisy or quiet?"
+    ]
+  },
+  {
+    "ar": "أحب بيتي، لأنه يجعلني أشعر بالراحة مع عائلتي.",
+    "en": "My own house! I can be with my family. I feel comfortable there.",
+    "questions": [
+      "What is Sophy’s favorite place?",
+      "Does she feel comfortable at home?"
+    ]
+  }
+]

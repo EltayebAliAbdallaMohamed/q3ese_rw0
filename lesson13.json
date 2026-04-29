@@ -1,0 +1,82 @@
+[
+  {
+    "ar": "كل شخص لديه بعض العادات غير الصحية مثل تناول الطعام غير الصحي أو قلة النوم.",
+    "en": "Everyone has a few unhealthy habits such as eating junk food or not getting enough sleep.",
+    "questions": [
+      "Do all people have habits?",
+      "Are junk food habits healthy?"
+    ]
+  },
+  {
+    "ar": "العادات السيئة صعبة التغيير لأنها جزء من السلوك اليومي.",
+    "en": "Bad habits are hard to change because they are part of daily behavior.",
+    "questions": [
+      "Are bad habits easy to change?",
+      "Why are habits difficult to change?"
+    ]
+  },
+  {
+    "ar": "لتغيير عادة يجب تغيير السلوك، وهذا يحتاج وقتاً.",
+    "en": "To change a habit, you must change your behavior, and this takes time.",
+    "questions": [
+      "What must you change to change a habit?",
+      "Does it happen quickly?"
+    ]
+  },
+  {
+    "ar": "هناك ست مراحل لتغيير العادات حسب الخبراء.",
+    "en": "There are six stages of change according to experts.",
+    "questions": [
+      "How many stages are there?",
+      "Are these stages important?"
+    ]
+  },
+  {
+    "ar": "في المرحلة الأولى يتجاهل الشخص المشكلة ولا يعترف بها.",
+    "en": "In the first stage, a person ignores the problem and does not accept it.",
+    "questions": [
+      "What happens in the first stage?",
+      "Does the person accept the problem?"
+    ]
+  },
+  {
+    "ar": "في مرحلة التفكير يعرف الشخص المشكلة لكنه لا يضع خطة.",
+    "en": "In the thinking stage, the person knows the problem but has no plan.",
+    "questions": [
+      "Does the person have a plan in this stage?",
+      "What does the person realize?"
+    ]
+  },
+  {
+    "ar": "في مرحلة القرار يقرر الشخص تغيير عادته ويضع خطة.",
+    "en": "In the deciding stage, the person decides to change and makes a plan.",
+    "questions": [
+      "What happens in the deciding stage?",
+      "Does the person take action yet?"
+    ]
+  },
+  {
+    "ar": "في مرحلة العمل يبدأ الشخص في تغيير عادته.",
+    "en": "In the acting stage, the person starts to change the habit.",
+    "questions": [
+      "What does the person do in the acting stage?",
+      "Is change already happening?"
+    ]
+  },
+  {
+    "ar": "في النهاية تصبح العادة الجديدة جزءاً من الحياة اليومية.",
+    "en": "In the end, the new behavior becomes a daily habit.",
+    "questions": [
+      "What happens after many weeks?",
+      "Does the new habit stay?"
+    ]
+  },
+  {
+    "ar": "تغيير العادات يحتاج إلى وقت وصبر وجهد مستمر.",
+    "en": "Changing habits takes time, patience, and continuous effort.",
+    "questions": [
+      "What do you need to change habits?",
+      "Is patience important?"
+    ]
+  }
+]

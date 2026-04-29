@@ -1,0 +1,82 @@
+[
+  {
+    "ar": "كيف تستمتع بوقتك بدون الكثير من المال؟",
+    "en": "How do you have fun without much money?",
+    "questions": [
+      "What is James asking about?",
+      "Is money needed for all fun activities?"
+    ]
+  },
+  {
+    "ar": "أريد أن أستمتع لكن ليس لدي الكثير من المال. ماذا يمكنني أن أفعل مجاناً؟",
+    "en": "I want to have fun, but I don’t have much money. What can I do for free?",
+    "questions": [
+      "Does James have much money?",
+      "What is his problem?"
+    ]
+  },
+  {
+    "ar": "اذهب إلى الأنشطة الرياضية في مدرستك. إنها ممتعة ومجانية.",
+    "en": "Go to your school’s sports events. It’s fun and free.",
+    "questions": [
+      "What does Anna suggest?",
+      "Are school sports events free?"
+    ]
+  },
+  {
+    "ar": "أنا أذهب لمشاهدة المباريات كل أسبوع مع أصدقائي.",
+    "en": "I go to games every weekend with my friends.",
+    "questions": [
+      "Does Anna go to games alone?",
+      "How often does she go?"
+    ]
+  },
+  {
+    "ar": "نذهب للتسوق في المحلات الغالية لكننا لا نشتري شيئاً.",
+    "en": "We go window-shopping at expensive stores, but we don’t buy anything.",
+    "questions": [
+      "What is window-shopping?",
+      "Do they spend money?"
+    ]
+  },
+  {
+    "ar": "عائلتنا تحب الذهاب إلى الحديقة والمشي في الطبيعة.",
+    "en": "Our family likes going to the park and walking in nature.",
+    "questions": [
+      "Where does Isabel go with her family?",
+      "Do they enjoy nature?"
+    ]
+  },
+  {
+    "ar": "نطبخ مع أصدقائنا ونجرب وصفات من دول مختلفة.",
+    "en": "We cook with friends and try recipes from different countries.",
+    "questions": [
+      "What do Carlos and his friends do?",
+      "Do they cook food from one country or many?"
+    ]
+  },
+  {
+    "ar": "أحب البقاء في المنزل ومشاهدة التلفاز.",
+    "en": "I like to stay home and watch TV.",
+    "questions": [
+      "What does Khalid enjoy doing?",
+      "Is watching TV free?"
+    ]
+  },
+  {
+    "ar": "يمكنك قضاء عطلة في مدينتك وزيارة الأماكن المشهورة.",
+    "en": "You can take a vacation in your own city and visit famous places.",
+    "questions": [
+      "Can you be a tourist in your own city?",
+      "What can you do in your city?"
+    ]
+  },
+  {
+    "ar": "شكراً للجميع على الأفكار. سأجرب بعضها.",
+    "en": "Thanks everyone for your ideas. I’ll try some of them.",
+    "questions": [
+      "What does James decide to do?",
+      "Does he accept the ideas?"
+    ]
+  }
+]

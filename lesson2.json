@@ -1,0 +1,90 @@
+[
+  {
+    "ar": "هذا الأسبوع، مجلة الحديث تسأل القراء أسئلة. اقرأ كل سؤال واختر إجابة واحدة.",
+    "en": "This week, Talk Magazine is asking readers questions. Read each question and choose one answer.",
+    "questions": [
+      "What is Talk Magazine asking readers?",
+      "Do readers choose one or two answers?"
+    ]
+  },
+  {
+    "ar": "هل أنت شخص ودود؟ نعم، لدي الكثير من الأصدقاء وأحب مقابلة أشخاص جدد.",
+    "en": "Are you a friendly person? Yes, I have a lot of friends and I like to meet new people.",
+    "questions": [
+      "Is James friendly?",
+      "Does he like meeting new people?"
+    ]
+  },
+  {
+    "ar": "أنا لطيف لكني هادئ. لدي صديقان أو ثلاثة أصدقاء مقربون فقط.",
+    "en": "I’m a nice guy but I’m quiet. I have two or three good friends.",
+    "questions": [
+      "Is Carlos loud or quiet?",
+      "How many good friends does he have?"
+    ]
+  },
+  {
+    "ar": "أنا لست مهتماً بالملابس، أنا أهتم بالشخصية أكثر.",
+    "en": "I’m not interested in clothes. I care more about personality.",
+    "questions": [
+      "What is Hassan interested in?",
+      "Does he care about clothes?"
+    ]
+  },
+  {
+    "ar": "أنا أحب ارتداء الملابس الجميلة وأنا مهتم بالموضة.",
+    "en": "I like to dress well. I am interested in fashion.",
+    "questions": [
+      "Is Matt interested in fashion?",
+      "Does he like dressing well?"
+    ]
+  },
+  {
+    "ar": "أنا طولي 192 سم وألعب كرة السلة في الجامعة.",
+    "en": "I am 6 feet 3 inches tall. I play basketball at university.",
+    "questions": [
+      "How tall is Rob?",
+      "What sport does he play?"
+    ]
+  },
+  {
+    "ar": "أنا طولي 179 سم، ولدي شقيقان طويلان جداً.",
+    "en": "I am about 5 feet 9 inches. My two brothers are very tall.",
+    "questions": [
+      "Is David tall?",
+      "Are his brothers tall?"
+    ]
+  },
+  {
+    "ar": "أنا مشغولة جداً لكني أنظف غرفتي كل يوم.",
+    "en": "I’m very busy but I clean my room every day.",
+    "questions": [
+      "Is Layla busy?",
+      "Does she clean her room?"
+    ]
+  },
+  {
+    "ar": "أنا أحب الضحك وأحكي قصصاً مضحكة.",
+    "en": "I love to laugh and tell funny stories.",
+    "questions": [
+      "Is Emma funny?",
+      "Does she tell stories?"
+    ]
+  },
+  {
+    "ar": "أنا جيد في الرياضيات وهي مادتي المفضلة.",
+    "en": "I’m good at math. It is my favorite subject.",
+    "questions": [
+      "What is Khalid’s favorite subject?",
+      "Is math easy for him?"
+    ]
+  },
+  {
+    "ar": "أفضل موادي هي الإنجليزية والفرنسية وأنا أتحدث الإسبانية أيضاً.",
+    "en": "My best subjects are English and French. I also speak Spanish.",
+    "questions": [
+      "What languages does Pablo study?",
+      "Does he speak more than one language?"
+    ]
+  }
+]

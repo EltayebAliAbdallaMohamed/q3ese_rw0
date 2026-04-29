@@ -1,0 +1,50 @@
+[
+  {
+    "ar": "اليوم سنتحدث عن سؤال الوحدة: كيف يمكن للتكنولوجيا أن تساعد الناس؟",
+    "en": "Today we’re going to talk about the Unit Question: How can technology help people?",
+    "questions": [
+      "What is the Unit Question?",
+      "Is it about technology or food?"
+    ]
+  },
+  {
+    "ar": "تساعدني التكنولوجيا على التواصل مع الناس في بلدي.",
+    "en": "Technology helps me talk with people in my country.",
+    "questions": [
+      "How does Sophy use technology?",
+      "Does technology help communication?"
+    ]
+  },
+  {
+    "ar": "يمكننا استخدام التكنولوجيا لتحسين الصحة والحصول على الفحوصات الطبية.",
+    "en": "Technology helps us with our health, such as getting medical tests.",
+    "questions": [
+      "How does technology help health?",
+      "Can it be used in hospitals?"
+    ]
+  },
+  {
+    "ar": "يمكننا استخدام تطبيقات الخرائط لمعرفة الأماكن بسهولة.",
+    "en": "We can use map apps to find places easily.",
+    "questions": [
+      "What apps help us find places?",
+      "Is it easy to travel with apps?"
+    ]
+  },
+  {
+    "ar": "التكنولوجيا توفر الكثير من المعلومات وتساعدنا على التعلم.",
+    "en": "Technology gives us a lot of information and helps us learn.",
+    "questions": [
+      "Does technology help learning?",
+      "Is information limited or large?"
+    ]
+  },
+  {
+    "ar": "هناك العديد من تطبيقات الهواتف التي تساعدنا في حياتنا اليومية.",
+    "en": "There are many mobile apps that help us in daily life.",
+    "questions": [
+      "Are there many apps or few?",
+      "Do apps help daily life?"
+    ]
+  }
+]

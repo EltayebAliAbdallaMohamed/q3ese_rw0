@@ -1,0 +1,82 @@
+[
+  {
+    "ar": "يحتفل الناس حول العالم بالمناسبات الخاصة باستخدام الطعام.",
+    "en": "People around the world celebrate special events with food.",
+    "questions": [
+      "How do people celebrate special events?",
+      "Do people use food in celebrations?"
+    ]
+  },
+  {
+    "ar": "يستمتعون بالطعام الخاص في الأعراس والأعياد وأعياد الميلاد.",
+    "en": "People enjoy special food at weddings, on holidays, and on birthdays.",
+    "questions": [
+      "What occasions include special food?",
+      "Is food part of birthdays?"
+    ]
+  },
+  {
+    "ar": "بعض الناس يحتفلون بالمهرجانات الغذائية التي تحدث مرة في السنة.",
+    "en": "Some people also celebrate food with festivals that happen once a year.",
+    "questions": [
+      "How often do food festivals happen?",
+      "Are festivals frequent or yearly?"
+    ]
+  },
+  {
+    "ar": "مهرجان الثوم في جيلروي بولاية كاليفورنيا حدث كبير جداً في شهر يوليو.",
+    "en": "The Gilroy Garlic Festival in California is a very big event in July.",
+    "questions": [
+      "Where is the garlic festival?",
+      "When does it happen?"
+    ]
+  },
+  {
+    "ar": "يتم تحضير أطباق كثيرة باستخدام الثوم مثل الفشار والآيس كريم.",
+    "en": "Many dishes are made with garlic, including popcorn and ice cream.",
+    "questions": [
+      "What food is special in Gilroy festival?",
+      "Can garlic be used in desserts?"
+    ]
+  },
+  {
+    "ar": "مهرجان الكمأة الأبيض الدولي في إيطاليا يقام في أكتوبر.",
+    "en": "The International White Truffle Fair in Italy takes place in October.",
+    "questions": [
+      "Where is the truffle festival?",
+      "When is it held?"
+    ]
+  },
+  {
+    "ar": "الكمأ طعام غالي جداً ويؤكل مع المعكرونة أو الأرز.",
+    "en": "Truffles are very expensive and eaten with pasta or rice.",
+    "questions": [
+      "Is truffle food cheap or expensive?",
+      "What is it eaten with?"
+    ]
+  },
+  {
+    "ar": "مهرجان الرنجة في فنلندا قديم جداً ويحتفل بالسمك.",
+    "en": "The Baltic Herring Festival in Finland is very old and celebrates fish.",
+    "questions": [
+      "What does the Finnish festival celebrate?",
+      "Is it a new or old festival?"
+    ]
+  },
+  {
+    "ar": "في السعودية، يحتفل الناس بأكل الكوزي وهو لحم مطبوخ.",
+    "en": "In Saudi Arabia, people celebrate by eating kuzi, cooked lamb.",
+    "questions": [
+      "What is kuzi?",
+      "Is it eaten in Saudi Arabia?"
+    ]
+  },
+  {
+    "ar": "في عيد الفطر، يستمتع الناس بأطباق لذيذة ويتشاركون الطعام مع الآخرين.",
+    "en": "During Eid, people enjoy delicious food and share meals with others.",
+    "questions": [
+      "What do people do during Eid?",
+      "Do people share food?"
+    ]
+  }
+]

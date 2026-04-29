@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson Template</title>
+
+<style>
+  body {
+    font-family: system-ui, Arial, sans-serif;
+    margin: 0;
+    padding: 16px;
+    background: #f9f9f9;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .card {
+    background: white;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+
+  .text-box {
+    font-size: 20px;
+    margin: 12px 0;
+  }
+
+  #arabic {
+    direction: rtl;
+    text-align: right;
+    font-size: 22px;
+  }
+
+  details summary {
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  button, select {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  button {
+    background: #007bff;
+    color: white;
+    border: none;
+  }
+
+  button:disabled {
+    background: #ccc;
+  }
+
+  input[type="range"] {
+    width: 100%;
+  }
+
+  ul {
+    padding-left: 18px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Listen and Learn</h2>
+
+<!-- Lesson selector -->
+<div class="card">
+  <label><strong>Select Lesson:</strong></label><br><br>
+  <select id="lessonSelect">
+    <option value="lesson1.json">Lesson 1</option>
+    <option value="lesson2.json">Lesson 2</option>
+    <option value="lesson3.json">Lesson 3</option>
+    <option value="lesson4.json">Lesson 4</option>
+    <option value="lesson5.json">Lesson 5</option>
+    <option value="lesson6.json">Lesson 6</option>
+    <option value="lesson7.json">Lesson 7</option>
+    <option value="lesson8.json">Lesson 8</option>
+    <option value="lesson9.json">Lesson 9</option>
+    <option value="lesson10.json">Lesson 10</option>
+    <option value="lesson11.json">Lesson 11</option>
+    <option value="lesson12.json">Lesson 12</option>
+    <option value="lesson13.json">Lesson 13</option>
+    <option value="lesson14.json">Lesson 14</option>
+    <option value="lesson15.json">Lesson 15</option>
+    <option value="lesson16.json">Lesson 16</option>
+    <option value="lesson17.json">Lesson 17</option>
+    <option value="lesson18.json">Lesson 18</option>
+    <option value="lesson19.json">Lesson 19</option>
+    <option value="lesson20.json">Lesson 20</option>
+    <option value="lesson21.json">Lesson 21</option>
+    
+  </select>
+</div>
+
+<p id="progress"></p>
+
+<div class="card">
+  <details>
+    <summary>Show Arabic</summary>
+    <p id="arabic" class="text-box"></p>
+  </details>
+
+  <details>
+    <summary>Show English</summary>
+    <p id="english" class="text-box"></p>
+  </details>
+</div>
+
+<div class="card">
+  <h3>Questions</h3>
+  <ul id="questions"></ul>
+</div>
+
+<div class="card">
+  <label>
+    <input type="checkbox" id="autoSpeak">
+    Auto-play
+  </label>
+</div>
+
+<div class="card">
+  <label>Rate of speech: <span id="rateValue">1</span></label>
+  <input type="range" id="rateSlider" min="0.2" max="1.5" step="0.1" value="1">
+</div>
+
+<div class="card">
+  <button onclick="speak(current.ar)">🔊 Arabic</button>
+  <button onclick="speak(current.en)">🔊 English</button>
+</div>
+<!-- ✅ ADDED STOP BUTTON ONLY -->
+<div class="card">
+  <button onclick="stopSpeech()">⏹ Stop</button>
+</div>
+
+
+<div class="card">
+  <button id="prevBtn" onclick="prev()">Previous</button>
+  <button id="nextBtn" onclick="next()">Next</button>
+</div>
+
+</div>
+
+<footer style="text-align:center; font-size:14px; color:#555; margin-top:20px;">
+  <p>&copy; 2026 Developed by: Eltayeb Mohamed</p>
+</footer>
+
+<script>
+let data = [];
+let index = 0;
+let current = {};
+let voices = [];
+let speechRate = 1;
+
+const lessonSelect = document.getElementById("lessonSelect");
+
+// ===== LOAD LESSON =====
+function loadLesson(file) {
+  fetch(file)
+    .then(res => {
+      if (!res.ok) throw new Error("File not found");
+      return res.json();
+    })
+    .then(json => {
+      data = json;
+      index = 0;
+      show();
+    })
+    .catch(err => {
+      console.error(err);
+      alert("Error loading lesson file.");
+    });
+}
+
+// load first lesson
+loadLesson(lessonSelect.value);
+
+// change lesson
+lessonSelect.addEventListener("change", () => {
+  loadLesson(lessonSelect.value);
+});
+
+// slider
+rateSlider.oninput = () => {
+  speechRate = parseFloat(rateSlider.value);
+  rateValue.textContent = speechRate;
+};
+
+// voices
+speechSynthesis.onvoiceschanged = () => {
+  voices = speechSynthesis.getVoices();
+};
+
+// show lesson
+function show() {
+  if (!data.length) return;
+
+  current = data[index];
+
+  arabic.textContent = current.ar || "";
+  english.textContent = current.en || "";
+  progress.textContent = (index + 1) + " / " + data.length;
+
+  renderQuestions();
+
+  prevBtn.disabled = index === 0;
+  nextBtn.disabled = index === data.length - 1;
+
+  if (autoSpeak.checked) speakSequence();
+}
+
+// questions
+function renderQuestions() {
+  const list = document.getElementById("questions");
+  list.innerHTML = "";
+
+  if (!current.questions) return;
+
+  current.questions.forEach(q => {
+    const li = document.createElement("li");
+    li.textContent = q;
+    list.appendChild(li);
+  });
+}
+
+// speak single
+function speak(text) {
+  if (!text) return;
+
+  speechSynthesis.cancel();
+
+  const msg = new SpeechSynthesisUtterance(text);
+  const isArabic = /[\u0600-\u06FF]/.test(text);
+
+  msg.lang = isArabic ? "ar-SA" : "en-US";
+
+  const voice = voices.find(v => v.lang.startsWith(isArabic ? "ar" : "en"));
+  if (voice) msg.voice = voice;
+
+  msg.rate = speechRate;
+  msg.pitch = isArabic ? 0.8 : 1;
+
+  speechSynthesis.speak(msg);
+}
+
+// ✅ FIXED AUTO PLAY (NO TRUNCATION)
+function speakSequence() {
+  speechSynthesis.cancel();
+
+  const ar = new SpeechSynthesisUtterance(current.ar);
+  const en = new SpeechSynthesisUtterance(current.en);
+
+  const arVoice = voices.find(v => v.lang.startsWith("ar"));
+  const enVoice = voices.find(v => v.lang.startsWith("en"));
+
+  if (arVoice) ar.voice = arVoice;
+  if (enVoice) en.voice = enVoice;
+
+  ar.lang = "ar-SA";
+  en.lang = "en-US";
+
+  ar.rate = speechRate;
+  en.rate = speechRate;
+
+  ar.pitch = 0.8;
+  en.pitch = 1;
+
+  // ✅ KEY FIX
+  ar.onend = () => {
+    speechSynthesis.speak(en);
+  };
+
+  speechSynthesis.speak(ar);
+}
+/* ✅ ADDED FUNCTION ONLY */
+function stopSpeech() {
+  speechSynthesis.cancel();
+}
+
+// navigation
+function next() {
+  if (index < data.length - 1) {
+    index++;
+    show();
+  }
+}
+
+function prev() {
+  if (index > 0) {
+    index--;
+    show();
+  }
+}
+</script>
+
+</body>
+</html>

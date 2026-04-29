@@ -1,0 +1,82 @@
+[
+  {
+    "ar": "بعض السكان القدامى في برلين لديهم ملاحظات حول مدينتهم.",
+    "en": "Some long-time residents of Berlin have complaints about their city.",
+    "questions": [
+      "Do some residents have complaints?",
+      "Is this about a city or a country?"
+    ]
+  },
+  {
+    "ar": "تمت دعوة السكان الجدد لإبداء آرائهم حول المدينة.",
+    "en": "Newer residents were invited to give their opinions about the city.",
+    "questions": [
+      "Who gave opinions?",
+      "Were they new or old residents?"
+    ]
+  },
+  {
+    "ar": "ميي جاءت من تايوان وتدرس الهندسة في جامعة هومبولت.",
+    "en": "Mei is from Taiwan and studies engineering at Humboldt University.",
+    "questions": [
+      "Where is Mei from?",
+      "What does she study?"
+    ]
+  },
+  {
+    "ar": "في البداية لم تكن تجربتها جيدة وكانت تشعر بالخجل بسبب ضعف لغتها.",
+    "en": "At first, her experience was not good and she felt shy because her German was weak.",
+    "questions": [
+      "Was her first impression good?",
+      "Why was she shy?"
+    ]
+  },
+  {
+    "ar": "بعد عدة أشهر بدأت تكون صداقات وأصبحت تستمتع بالحياة في برلين.",
+    "en": "After several months, she made friends and started enjoying life in Berlin.",
+    "questions": [
+      "Did she make friends quickly?",
+      "How did her feelings change?"
+    ]
+  },
+  {
+    "ar": "تالا جاءت من الفلبين وتعيش في المدينة مع عائلتها.",
+    "en": "Tala is from the Philippines and lives in the city with her family.",
+    "questions": [
+      "Where is Tala from?",
+      "Does she live alone?"
+    ]
+  },
+  {
+    "ar": "في البداية لم تحب الطقس البارد لكنها بدأت تستمتع بالأنشطة الشتوية.",
+    "en": "At first, she did not like the cold weather but later enjoyed winter activities.",
+    "questions": [
+      "Did she like cold weather at first?",
+      "Did her opinion change?"
+    ]
+  },
+  {
+    "ar": "ذهبت مع عائلتها إلى الأسواق الخارجية واستمتعت بالأضواء الجميلة.",
+    "en": "She visited outdoor markets with her family and enjoyed the beautiful lights.",
+    "questions": [
+      "What did she visit?",
+      "Did she enjoy the experience?"
+    ]
+  },
+  {
+    "ar": "في اليوم التالي ذهبت للتزلج على الجليد مع أصدقائها.",
+    "en": "The next day, she went ice skating with her friends.",
+    "questions": [
+      "What activity did she do the next day?",
+      "Was she alone?"
+    ]
+  },
+  {
+    "ar": "بييدرو يحب ركوب الدراجة واستكشاف الحدائق في المدينة.",
+    "en": "Pedro loves biking and exploring parks in the city.",
+    "questions": [
+      "What does Pedro like?",
+      "Does he enjoy parks?"
+    ]
+  }
+]

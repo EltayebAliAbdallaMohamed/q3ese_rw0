@@ -1,0 +1,66 @@
+[
+  {
+    "ar": "اليوم سنتحدث عن سؤال الوحدة: هل يمكن للطلاب التعلم بطرق مختلفة؟",
+    "en": "Today we are going to talk about the Unit Question: Can students learn in different ways?",
+    "questions": [
+      "What is the Unit Question?",
+      "Is the question about learning methods?"
+    ]
+  },
+  {
+    "ar": "أنا لا أحب الجلوس طوال اليوم. أريد أن أتحرك.",
+    "en": "I don’t like sitting all day. I want to be able to move around.",
+    "questions": [
+      "Does Marcus like sitting all day?",
+      "What does he want to do?"
+    ]
+  },
+  {
+    "ar": "أعتقد أنه من المهم الجلوس والانتباه في الصف.",
+    "en": "I think it is important to sit down and pay attention in class.",
+    "questions": [
+      "Does Yuna agree with moving around?",
+      "What does she think is important?"
+    ]
+  },
+  {
+    "ar": "أعرف مدرسة يكون فيها الطلاب في الخارج طوال اليوم.",
+    "en": "I know about a school where students are outside all day.",
+    "questions": [
+      "Where are students in Felix’s example school?",
+      "Does Felix think active learning is good?"
+    ]
+  },
+  {
+    "ar": "ربما يمكن للطلاب التعلم بطرق مختلفة في مدارس مختلفة.",
+    "en": "Maybe students can learn in different ways in different schools.",
+    "questions": [
+      "What does Felix think about learning styles?",
+      "Is learning the same everywhere?"
+    ]
+  },
+  {
+    "ar": "في بلدي، الطلاب يقضون وقتاً طويلاً وهم يجلسون.",
+    "en": "In my country, students spend a lot of time sitting down.",
+    "questions": [
+      "Do students sit a lot in Sophy’s country?",
+      "What does she think about new learning methods?"
+    ]
+  },
+  {
+    "ar": "ربما طريقة جديدة للتعلم ستكون مفيدة.",
+    "en": "Maybe a new way of learning would be helpful.",
+    "questions": [
+      "Does Sophy support new learning methods?",
+      "Is she open to change?"
+    ]
+  },
+  {
+    "ar": "في دول مختلفة، يوجد أنواع مختلفة من المدارس.",
+    "en": "In different countries, students go to many different kinds of schools.",
+    "questions": [
+      "Are schools the same in all countries?",
+      "What changes between countries?"
+    ]
+  }
+]

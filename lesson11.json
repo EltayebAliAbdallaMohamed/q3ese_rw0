@@ -1,0 +1,82 @@
+[
+  {
+    "ar": "فكر بعض طلاب الجامعة في فكرة ذكية لبناء منزل خاص.",
+    "en": "Some college students had an intelligent idea to build a special house.",
+    "questions": [
+      "What did the students want to build?",
+      "Was their idea simple or intelligent?"
+    ]
+  },
+  {
+    "ar": "كان الهدف بناء منزل حديث يستخدم كمية قليلة من الطاقة.",
+    "en": "They wanted to build a modern house that uses a small amount of energy.",
+    "questions": [
+      "What was the goal of the house?",
+      "Did it use a lot of energy?"
+    ]
+  },
+  {
+    "ar": "المنزل يستخدم الطاقة الشمسية للحرارة والكهرباء.",
+    "en": "The house uses solar energy for heat and power.",
+    "questions": [
+      "What type of energy does the house use?",
+      "Is it renewable energy?"
+    ]
+  },
+  {
+    "ar": "المنزل صديق للبيئة ويسمى المنزل الأخضر.",
+    "en": "The house is green, meaning it is friendly to the environment.",
+    "questions": [
+      "Why is it called a green house?",
+      "Is it harmful to the environment?"
+    ]
+  },
+  {
+    "ar": "عمل الطلاب مع الأساتذة وشاركوا في التصميم والبناء.",
+    "en": "The students worked with professors to design and build the house.",
+    "questions": [
+      "Who helped the students?",
+      "Did they work alone?"
+    ]
+  },
+  {
+    "ar": "المنزل صغير لكنه مريح جداً ويضم غرفتي نوم.",
+    "en": "The house is small but very comfortable and has two bedrooms.",
+    "questions": [
+      "How many bedrooms are in the house?",
+      "Is the house comfortable?"
+    ]
+  },
+  {
+    "ar": "تم وضع المطبخ وغرفة الطعام والجلوس بجانب بعضها.",
+    "en": "The kitchen, dining area, and living room are next to each other.",
+    "questions": [
+      "Are the rooms connected or separate?",
+      "Is the layout open?"
+    ]
+  },
+  {
+    "ar": "المنزل يستخدم ألواح شمسية لتوليد الكهرباء والماء الساخن.",
+    "en": "The house uses solar panels to generate electricity and hot water.",
+    "questions": [
+      "What do solar panels produce?",
+      "Does the house need outside electricity?"
+    ]
+  },
+  {
+    "ar": "هناك حديقة صغيرة داخل المنزل لزراعة الخضروات.",
+    "en": "There is a small indoor garden to grow vegetables.",
+    "questions": [
+      "What is grown inside the house?",
+      "Can students learn from the garden?"
+    ]
+  },
+  {
+    "ar": "يعيش طلاب الجامعة في هذا المنزل اليوم ويهتمون بتوفير الطاقة.",
+    "en": "University students live in the house today and care about saving energy.",
+    "questions": [
+      "Who lives in the house now?",
+      "Do they care about energy saving?"
+    ]
+  }
+]

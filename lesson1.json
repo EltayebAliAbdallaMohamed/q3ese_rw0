@@ -1,0 +1,89 @@
+[
+  {
+    "ar": "اليوم نبدأ الوحدة الأولى. كل وحدة في كتاب كيو تبدأ بسؤال.",
+    "en": "Today we are beginning Unit 1. Every unit in Q starts with a question.",
+    "questions": [
+      "What are they starting today?",
+      "Does every unit start with a question? (Yes/No)"
+    ]
+  },
+  {
+    "ar": "سوف نتحدث عن هذا السؤال أثناء دراستنا للوحدة.",
+    "en": "We will talk about this question again while we study the unit.",
+    "questions": [
+      "Will they talk about the question again?",
+      "When will they talk about it?"
+    ]
+  },
+  {
+    "ar": "السؤال في الوحدة الأولى هو: ما نوع الشخص الذي أنت عليه؟",
+    "en": "The question for Unit 1 is: What kind of person are you?",
+    "questions": [
+      "What is the main question of Unit 1?",
+      "Is this question about personality?"
+    ]
+  },
+  {
+    "ar": "هل تحب التحدث كثيراً؟ هل تحب أن تكون مع الكثير من الناس؟",
+    "en": "Do you like to talk a lot? Do you like to be with a lot of people?",
+    "questions": [
+      "What two questions are asked?",
+      "Are these questions about social behavior?"
+    ]
+  },
+  {
+    "ar": "أنا لا أتحدث كثيراً.",
+    "en": "I don’t talk a lot.",
+    "questions": [
+      "Does Yuna talk a lot? (Yes/No)",
+      "Who said this?"
+    ]
+  },
+  {
+    "ar": "أنا أتحدث كثيراً. أحب الناس، لكني أفضل أن أكون مع مجموعة صغيرة.",
+    "en": "I talk a lot. I like people, but I prefer to be with a small group.",
+    "questions": [
+      "Does Felix like people?",
+      "Does he prefer big groups or small groups?"
+    ]
+  },
+  {
+    "ar": "ربما أنا شخص جاد.",
+    "en": "Maybe I’m a serious person.",
+    "questions": [
+      "How does Felix describe himself?",
+      "Is he joking or serious?"
+    ]
+  },
+  {
+    "ar": "أنا أحب أن أكون مع الكثير من الناس! ودائماً أحب الخروج وفعل الأشياء.",
+    "en": "I love being with lots of people! And I always like to go out and do things.",
+    "questions": [
+      "Does Marcus like being with many people?",
+      "Does he like staying at home?"
+    ]
+  },
+  {
+    "ar": "أنا لا أحب البقاء في المنزل.",
+    "en": "I don’t like to stay at home.",
+    "questions": [
+      "Does Marcus like staying at home? (Yes/No)"
+    ]
+  },
+  {
+    "ar": "أنا مجتهدة، وأحاول دائماً أن أكون طالبة جيدة.",
+    "en": "I’m a hard worker, and I always try to be a good student.",
+    "questions": [
+      "How does Sophy describe herself?",
+      "Is she a hard worker?"
+    ]
+  },
+  {
+    "ar": "وأنتِ طالبة جيدة! سنتحدث أكثر عن أنواع مختلفة من الناس.",
+    "en": "And you are a good student! We’ll talk more about different kinds of people.",
+    "questions": [
+      "What will they talk about next?",
+      "Is Sophy a good student?"
+    ]
+  }
+]

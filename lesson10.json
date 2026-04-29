@@ -1,0 +1,82 @@
+[
+  {
+    "ar": "كيف حالك؟ كيف هي سنتك الأولى في الجامعة؟",
+    "en": "How are you doing? How is your first year at university?",
+    "questions": [
+      "Who is the letter written to?",
+      "Is it about university life?"
+    ]
+  },
+  {
+    "ar": "أحب العيش في كامبريدج والذهاب إلى معهد ماساتشوستس للتكنولوجيا.",
+    "en": "I love living in Cambridge and going to MIT.",
+    "questions": [
+      "Where does the student live?",
+      "Which university does he attend?"
+    ]
+  },
+  {
+    "ar": "زملائي من جميع أنحاء العالم والأساتذة رائعون.",
+    "en": "My classmates are from all over the world and the professors are fantastic.",
+    "questions": [
+      "Are the classmates from one country?",
+      "Are the professors good?"
+    ]
+  },
+  {
+    "ar": "دروسي صعبة جداً لكني سعيد هنا.",
+    "en": "My classes are very difficult but I am happy here.",
+    "questions": [
+      "Are the classes easy or difficult?",
+      "Does he enjoy his studies?"
+    ]
+  },
+  {
+    "ar": "أعيش في سكن جامعي حديث يسمى سكن سيمونز.",
+    "en": "My dormitory is a modern building called Simmons Hall.",
+    "questions": [
+      "What is the name of the dorm?",
+      "Is it old or modern?"
+    ]
+  },
+  {
+    "ar": "السكن الجامعي في أمريكا كبير ويعتبر جزءاً من الجامعة.",
+    "en": "Dorms in the U.S. are big and part of the university.",
+    "questions": [
+      "Are dorms small or big in the U.S.?",
+      "Are they part of the university?"
+    ]
+  },
+  {
+    "ar": "أعيش في الطابق الثامن وأشارك الغرفة مع طالب آخر.",
+    "en": "I live on the eighth floor and share a room with another student.",
+    "questions": [
+      "Which floor does he live on?",
+      "Does he live alone?"
+    ]
+  },
+  {
+    "ar": "غرفتنا فيها تسع نوافذ ومكتب وإطلالة جميلة على النهر.",
+    "en": "Our room has nine windows, a desk, and a beautiful view of the river.",
+    "questions": [
+      "How many windows are in the room?",
+      "What can they see from the desk?"
+    ]
+  },
+  {
+    "ar": "في السكن توجد صالات ومسرح رياضي وأنشطة ممتعة.",
+    "en": "The dorm has lounges, a movie theater, and fun activities.",
+    "questions": [
+      "What facilities are in the dorm?",
+      "Is there a movie theater?"
+    ]
+  },
+  {
+    "ar": "أنا أستمتع بالحياة هنا وأصدقائي يدرسون بجد.",
+    "en": "I enjoy living here and my friends study hard.",
+    "questions": [
+      "Does he like living in the dorm?",
+      "Do students study or relax only?"
+    ]
+  }
+]

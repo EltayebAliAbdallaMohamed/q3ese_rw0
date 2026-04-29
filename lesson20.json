@@ -1,0 +1,74 @@
+[
+  {
+    "ar": "تخيل أنك لا تستطيع الرؤية وتحتاج إلى مساعدة في المطبخ.",
+    "en": "Imagine that you are blind and you need help in the kitchen.",
+    "questions": [
+      "What is the situation described?",
+      "Is the person able to see?"
+    ]
+  },
+  {
+    "ar": "الشخص الكفيف يواجه مشاكل يومية ويحتاج أحياناً إلى المساعدة.",
+    "en": "A blind person faces daily problems and sometimes needs help.",
+    "questions": [
+      "Do blind people have challenges?",
+      "Do they always need help?"
+    ]
+  },
+  {
+    "ar": "هانس ويبيرغ كان يعاني من ضعف في البصر وكان يساعد المكفوفين.",
+    "en": "Hans Jørgen Wiberg had low vision and helped blind people.",
+    "questions": [
+      "Who is Hans Wiberg?",
+      "Did he help others?"
+    ]
+  },
+  {
+    "ar": "الكثير من المكفوفين يريدون أن يكونوا مستقلين دون الاعتماد على الآخرين.",
+    "en": "Many blind people want to be independent without relying on others.",
+    "questions": [
+      "Do blind people want independence?",
+      "Do they like asking for help?"
+    ]
+  },
+  {
+    "ar": "فكرة التطبيق هي ربط المكفوفين بمساعدين عبر الفيديو.",
+    "en": "The idea of the app is to connect blind people with helpers through video.",
+    "questions": [
+      "How does the app work?",
+      "Does it use video calls?"
+    ]
+  },
+  {
+    "ar": "المتطوع يمكنه رؤية الفيديو ومساعدة الشخص الكفيف.",
+    "en": "A volunteer can watch the video and help the blind person.",
+    "questions": [
+      "Who helps the blind user?",
+      "Does the volunteer see the situation?"
+    ]
+  },
+  {
+    "ar": "تم إطلاق تطبيق Be My Eyes في عام 2015 وحقق نجاحاً كبيراً.",
+    "en": "The Be My Eyes app was launched in 2015 and became very successful.",
+    "questions": [
+      "When was the app launched?",
+      "Was it successful?"
+    ]
+  },
+  {
+    "ar": "التطبيق لديه مستخدمون في أكثر من 150 دولة حول العالم.",
+    "en": "The app has users in more than 150 countries around the world.",
+    "questions": [
+      "How many countries use the app?",
+      "Is it global?"
+    ]
+  },
+  {
+    "ar": "التطبيق يساعد المكفوفين ويغير حياتهم بطريقة إيجابية.",
+    "en": "The app helps blind people and changes their lives in a positive way.",
+    "questions": [
+      "Does the app improve lives?",
+      "Who benefits from it?"
+    ]
+  }
+]

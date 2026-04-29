@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson Template</title>
+
+<style>
+  body {
+    font-family: system-ui, Arial, sans-serif;
+    margin: 0;
+    padding: 16px;
+    background: #f9f9f9;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .card {
+    background: white;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+
+  .text-box {
+    font-size: 20px;
+    margin: 12px 0;
+  }
+
+  #arabic {
+    direction: rtl;
+    text-align: right;
+    font-size: 22px;
+  }
+
+  button, select {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  button {
+    background: #007bff;
+    color: white;
+    border: none;
+  }
+
+  button:disabled {
+    background: #ccc;
+  }
+
+  input[type="range"] {
+    width: 100%;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Listen and Learn</h2>
+
+<!-- ✅ LESSON SELECTOR -->
+<div class="card">
+  <label><strong>Select Lesson:</strong></label><br><br>
+  <select id="lessonSelect">
+    <option value="lesson1.json">Lesson 1</option>
+    <option value="lesson2.json">Lesson 2</option>
+    <option value="lesson3.json">Lesson 3</option>
+  </select>
+</div>
+
+<p id="progress"></p>
+
+<div class="card">
+  <details>
+    <summary>Show Arabic</summary>
+    <p id="arabic" class="text-box"></p>
+  </details>
+
+  <details>
+    <summary>Show English</summary>
+    <p id="english" class="text-box"></p>
+  </details>
+</div>
+
+<div class="card">
+  <h3>Questions</h3>
+  <ul id="questions"></ul>
+</div>
+
+<div class="card">
+  <label>
+    <input type="checkbox" id="autoSpeak">
+    Auto-play
+  </label>
+</div>
+
+<div class="card">
+  <label>Speed: <span id="rateValue">1</span></label>
+  <input type="range" id="rateSlider" min="0.2" max="1.5" step="0.1" value="1">
+</div>
+
+<div class="card">
+  <button onclick="speak(current.ar)">🔊 Arabic</button>
+  <button onclick="speak(current.en)">🔊 English</button>
+</div>
+
+<div class="card">
+  <button id="prevBtn" onclick="prev()">Previous</button>
+  <button id="nextBtn" onclick="next()">Next</button>
+</div>
+
+</div>
+
+<footer style="text-align:center; font-size:14px; color:#555; margin-top:20px;">
+  <p>&copy; 2026 Developed by: Eltayeb Mohamed</p>
+</footer>
+
+<script>
+let data = [];
+let index = 0;
+let current = {};
+let voices = [];
+let speechRate = 1;
+
+const lessonSelect = document.getElementById("lessonSelect");
+
+// 🔥 Load selected lesson
+function loadLesson(file) {
+  fetch(file)
+    .then(res => res.json())
+    .then(json => {
+      data = json;
+      index = 0;
+      show();
+    })
+    .catch(err => {
+      alert("Error loading lesson: " + file);
+      console.error(err);
+    });
+}
+
+// When user changes lesson
+lessonSelect.addEventListener("change", () => {
+  loadLesson(lessonSelect.value);
+});
+
+// Initial load
+loadLesson(lessonSelect.value);
+
+// slider
+rateSlider.oninput = () => {
+  speechRate = parseFloat(rateSlider.value);
+  rateValue.textContent = speechRate;
+};
+
+// voices
+speechSynthesis.onvoiceschanged = () => {
+  voices = speechSynthesis.getVoices();
+};
+
+// show lesson
+function show() {
+  if (!data.length) return;
+
+  current = data[index];
+
+  arabic.textContent = current.ar;
+  english.textContent = current.en;
+  progress.textContent = (index + 1) + " / " + data.length;
+
+  renderQuestions();
+
+  prevBtn.disabled = index === 0;
+  nextBtn.disabled = index === data.length - 1;
+
+  if (autoSpeak.checked) speakSequence();
+}
+
+// questions
+function renderQuestions() {
+  const list = document.getElementById("questions");
+  list.innerHTML = "";
+
+  if (!current.questions) return;
+
+  current.questions.forEach(q => {
+    const li = document.createElement("li");
+    li.textContent = q;
+    list.appendChild(li);
+  });
+}
+
+// speak
+function speak(text) {
+  speechSynthesis.cancel();
+
+  const msg = new SpeechSynthesisUtterance(text);
+  const isArabic = /[\u0600-\u06FF]/.test(text);
+
+  msg.lang = isArabic ? "ar-SA" : "en-US";
+
+  const voice = voices.find(v => v.lang.startsWith(isArabic ? "ar" : "en"));
+  if (voice) msg.voice = voice;
+
+  msg.rate = speechRate;
+  msg.pitch = isArabic ? 0.8 : 1;
+
+  speechSynthesis.speak(msg);
+}
+
+// sequence
+function speakSequence() {
+  speechSynthesis.cancel();
+
+  speak(current.ar);
+
+  setTimeout(() => speak(current.en), 1200);
+}
+
+// navigation
+function next() {
+  if (index < data.length - 1) {
+    index++;
+    show();
+  }
+}
+
+function prev() {
+  if (index > 0) {
+    index--;
+    show();
+  }
+}
+</script>
+
+</body>
+</html>
