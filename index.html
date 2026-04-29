@@ -70,6 +70,16 @@
   li {
     margin-bottom: 8px;
   }
+
+  /* Highlight chunk after search */
+  .highlight {
+    animation: flash 1.2s ease-out;
+  }
+
+  @keyframes flash {
+    0% { background: #fff3b0; }
+    100% { background: white; }
+  }
 </style>
 </head>
 
@@ -104,13 +114,28 @@
     <option value="lesson19.json">Lesson 19</option>
     <option value="lesson20.json">Lesson 20</option>
     <option value="lesson21.json">Lesson 21</option>
-    
   </select>
+</div>
+
+<!-- Search by chunk number -->
+<div class="card">
+  <label><strong>Go to Chunk:</strong></label><br><br>
+  <input id="searchInput" type="number" min="1" placeholder="Chunk #"
+         style="padding:10px; width:120px; font-size:18px;">
+  <button id="searchBtn">🔍</button>
+</div>
+
+<!-- Search English keyword only -->
+<div class="card">
+  <label><strong>Search English Keyword:</strong></label><br><br>
+  <input id="engInput" type="text" placeholder="Type English word..."
+         style="padding:10px; width:220px; font-size:18px;">
+  <button id="engBtn">🔎</button>
 </div>
 
 <p id="progress"></p>
 
-<div class="card">
+<div class="card" id="mainCard">
   <details>
     <summary>Show Arabic</summary>
     <p id="arabic" class="text-box"></p>
@@ -143,11 +168,10 @@
   <button onclick="speak(current.ar)">🔊 Arabic</button>
   <button onclick="speak(current.en)">🔊 English</button>
 </div>
-<!-- ✅ ADDED STOP BUTTON ONLY -->
+
 <div class="card">
   <button onclick="stopSpeech()">⏹ Stop</button>
 </div>
-
 
 <div class="card">
   <button id="prevBtn" onclick="prev()">Previous</button>
@@ -187,10 +211,8 @@ function loadLesson(file) {
     });
 }
 
-// load first lesson
 loadLesson(lessonSelect.value);
 
-// change lesson
 lessonSelect.addEventListener("change", () => {
   loadLesson(lessonSelect.value);
 });
@@ -206,7 +228,7 @@ speechSynthesis.onvoiceschanged = () => {
   voices = speechSynthesis.getVoices();
 };
 
-// show lesson
+// show chunk
 function show() {
   if (!data.length) return;
 
@@ -224,7 +246,7 @@ function show() {
   if (autoSpeak.checked) speakSequence();
 }
 
-// questions
+// render questions
 function renderQuestions() {
   const list = document.getElementById("questions");
   list.innerHTML = "";
@@ -238,7 +260,7 @@ function renderQuestions() {
   });
 }
 
-// speak single
+// speak single text
 function speak(text) {
   if (!text) return;
 
@@ -258,7 +280,7 @@ function speak(text) {
   speechSynthesis.speak(msg);
 }
 
-// ✅ FIXED AUTO PLAY (NO TRUNCATION)
+// English + Arabic auto sequence
 function speakSequence() {
   speechSynthesis.cancel();
 
@@ -280,14 +302,13 @@ function speakSequence() {
   ar.pitch = 0.8;
   en.pitch = 1;
 
-  // ✅ KEY FIX
   ar.onend = () => {
     speechSynthesis.speak(en);
   };
 
   speechSynthesis.speak(ar);
 }
-/* ✅ ADDED FUNCTION ONLY */
+
 function stopSpeech() {
   speechSynthesis.cancel();
 }
@@ -306,6 +327,62 @@ function prev() {
     show();
   }
 }
+
+/* 🔎 SEARCH BY CHUNK NUMBER */
+document.getElementById("searchBtn").addEventListener("click", () => {
+  const num = parseInt(document.getElementById("searchInput").value);
+
+  if (isNaN(num) || num < 1 || num > data.length) {
+    alert("Invalid chunk number.");
+    return;
+  }
+
+  index = num - 1;
+  show();
+
+  // highlight
+  const card = document.getElementById("mainCard");
+  card.classList.remove("highlight");
+  void card.offsetWidth;
+  card.classList.add("highlight");
+});
+
+/* 🔍 SEARCH ENGLISH ONLY */
+document.getElementById("engBtn").addEventListener("click", () => {
+  const keyword = document.getElementById("engInput").value.trim().toLowerCase();
+
+  if (!keyword) {
+    alert("Please type an English keyword.");
+    return;
+  }
+
+  let foundIndex = -1;
+
+  for (let i = 0; i < data.length; i++) {
+    const chunk = data[i];
+    const textEn = (chunk.en || "").toLowerCase();
+
+    if (textEn.includes(keyword)) {
+      foundIndex = i;
+      break;
+    }
+  }
+
+  if (foundIndex === -1) {
+    alert("No English chunk contains that word.");
+    return;
+  }
+
+  index = foundIndex;
+  show();
+
+  // highlight
+  const card = document.getElementById("mainCard");
+  card.classList.remove("highlight");
+  void card.offsetWidth;
+  card.classList.add("highlight");
+});
+
 </script>
 
 </body>
